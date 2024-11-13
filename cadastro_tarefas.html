@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Tarefas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="project-2 v-center">
+        <!-- Cabeçalho com os botões -->
+        <div class="header">
+            <h1>Gerenciamento de Tarefas</h1>
+            <div class="buttons-container">
+                <a class="button" href="cadastro_usuarios.html">Cadastro de Usuários</a>
+                <a class="button" href="cadastro_tarefas.html">Cadastro de Tarefas</a>
+                <a class="button" href="gerenciar_tarefas.html">Gerenciar Tarefas</a>
+            </div>
+        </div>
+
+        <!-- Formulário de Cadastro de Tarefa -->
+        <div class="task-form-container">
+            <h2>Cadastro de Tarefa</h2>
+            <form action="cadastrar_tarefa.php" method="POST">
+                <div class="form-group">
+                    <label for="descricao">Descrição:</label>
+                    <input type="text" id="descricao" name="descricao" required>
+                </div>
+                <div class="form-group">
+                    <label for="setor">Setor:</label>
+                    <input type="text" id="setor" name="setor" required>
+                </div>
+                <div class="form-group">
+                    <label for="usuario">Usuário:</label>
+                    <input type="text" id="usuario" name="usuario" value="João" readonly required>
+                </div>
+                <div class="form-group">
+                    <label for="prioridade">Prioridade:</label>
+                    <select id="prioridade" name="prioridade" required>
+                        <option value="Baixa">Baixa</option>
+                        <option value="Média">Média</option>
+                        <option value="Alta">Alta</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="button">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,218 @@
+/* Remover a cor de fundo do container */
+body {
+    font-family: helvetica, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Estilo do cabeçalho (título e botões) */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(0, 38, 255);
+    color: aliceblue;
+}
+
+.header h1 {
+    margin: 0; 
+    font-size: 24px;  
+}
+
+.buttons-container {
+    display: flex;
+    gap: 15px;  
+}
+
+/* Estilo do botão */
+.button {
+    padding: 10px 20px;
+    background-color: #060aff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: helvetica, serif;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #0045d1;
+}
+
+/* Estilos para o formulário de cadastro de usuário alinhado à esquerda */
+.user-form-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 300px; /* Definindo uma largura fixa */
+    margin-left: 30px; /* Alinhando à esquerda da tela */
+}
+
+.user-form-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.form-group button {
+    width: 80%;
+    padding: 12px;
+    background-color: #060aff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.form-group button:hover {
+    background-color: #0045d1;
+}
+
+/* Estilo para a página de sucesso e erro */
+.container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 400px;  /* Definindo uma largura maior para que a mensagem fique bem apresentada */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;  /* Centraliza o conteúdo */
+}
+
+/* Estilo do título de sucesso ou erro */
+.container h1 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para a mensagem de sucesso/erro */
+.container p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Estilo para o botão de voltar */
+.container .button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #060aff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-family: helvetica, serif;
+    text-align: center;
+    cursor: pointer;
+}
+
+.container .button:hover {
+    background-color: #0045d1;
+}
+/* Estilo para o container de tarefas */
+.tasks-container {
+    margin: 20px;
+}
+
+.task-status {
+    margin-bottom: 30px;
+}
+
+.task-status h3 {
+    font-size: 20px;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.task-item {
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+}
+
+.task-item p {
+    margin: 5px 0;
+}
+
+.task-actions {
+    margin-top: 10px;
+}
+
+.task-actions .button {
+    margin-right: 10px;
+}
+/* Estilo para os formulários */
+.task-form-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+}
+
+.task-form-container h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.task-form-container label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.task-form-container input, .task-form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.task-form-container button {
+    padding: 10px 20px;
+    background-color: #060aff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.task-form-container button:hover {
+    background-color: #0045d1;
+}
+
+/* Estilo de erro */
+.error {
+    color: red;
+    font-size: 16px;
+}
